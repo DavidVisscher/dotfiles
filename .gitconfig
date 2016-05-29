@@ -1,0 +1,11 @@
+[user]
+	name = David Visscher
+	email = david@davidvisscher.nl
+[core]
+	editor = vi
+[push]
+	default = simple
+[oh-my-zsh]
+	hide-status = 0
+[alias]
+	l = "!~/.helper_scripts/git_pretty_log.sh"
