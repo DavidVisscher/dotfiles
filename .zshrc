@@ -47,7 +47,6 @@ alias "npmme"="sudo npm install";
 alias "gemme"="sudo gem install";
 
 # Composer Aliases
-alias "composer"="php ~/composer.phar";
 export PATH=$PATH:~/.composer/vendor/bin;
 
 # Wireshark Aliases
