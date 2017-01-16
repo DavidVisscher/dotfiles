@@ -1,0 +1,68 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   argb:00000000,  #D8DEE9 , argb:00000000,  #FAC863 ,  #1B2B34
+! Color scheme for urgent row
+rofi.color-urgent:                   argb:00000000,  #F99157 , argb:00000000,  #F99157 ,  #1B2B34
+! Color scheme for active row
+rofi.color-active:                   argb:00000000,  #6699CC , argb:00000000,  #6699CC ,  #1B2B34
+! Color scheme window
+rofi.color-window:                   argb:ee222222,  #FAC863 ,  #FAC863
+! Separator style (none, dash, solid)
+rofi.separator-style:                none
+! Font
+rofi.font:                           terminus 16
+
+! ------------------------------------------------------------------------------
+! Orange Theme
+! ------------------------------------------------------------------------------
+
+! special
+*.foreground:   #ffab26
+*.background:   #1c1709
+*.cursorColor:  #c2b9a1
+
+! black
+*.color0:       #1c1709
+*.color8:       #4f4939
+
+! red
+*.color1:       #8e4317
+*.color9:       #f07935
+
+! green
+*.color2:       #787200
+*.color10:      #d9d138
+
+! yellow
+*.color3:       #945c00
+*.color11:      #ffab26
+
+! blue
+*.color4:       #315094
+*.color12:      #8aa9ed
+
+! magenta
+*.color5:       #5c2e40
+*.color13:      #ff8cb8
+
+! cyan
+*.color6:       #00617d
+*.color14:      #43bfe0
+
+! white
+*.color7:       #c2b9a1
+*.color15:      #f2e8c9
+
+! DPI Settings
+
+Xft.dpi: 200
+
+! URXVT SETTINGS
+
+URxvt.font: xft:terminus:size=12
+URxvt.scrollBar: off
+URxvt.cursorBlink: true
