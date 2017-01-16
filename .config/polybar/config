@@ -18,7 +18,7 @@ green = #787200
 [bar/Bar]
 bottom = false
 dock = false
-wm-restack = i3
+wm-restack = true
 width = 100%
 height = 48
 
@@ -33,17 +33,17 @@ module-margin-right = 1
 module-margin-left = 1
 
 #modules-right = backlight filesystem battery date menu0
-modules-right = backlight filesystem date menu0
-modules-center = mpd volume
+modules-right = volume backlight filesystem date menu0
+modules-center = xwindow
 modules-left = i3 wlan eth cpu memory temperature
 
-background = #66090909
+background = #33090909
 foreground = ${colors.white}
 
 underline-size = 2
 underline-color = ${colors.white}
 
-tray-detached = false
+tray-detached = true
 tray-position = right
 tray-offset-x =
 tray-maxsize =
@@ -56,7 +56,7 @@ font-2 = TakaoGothic:weight=bold:size=10;0
 [module/xwindow]
 type = internal/xwindow
 label = %title%
-label-maxlen = 30
+label-maxlen = 50
 
 
 [module/filesystem]
@@ -102,17 +102,17 @@ format = <label-state>
 index-sort = true
 
 label-focused = %index%
-label-focused-background = ${colors.black}
+;label-focused-background = ${colors.black}
 label-focused-padding = 1
 label-focused-underline = ${colors.white}
 
 label-unfocused = %index%
 label-unfocused-padding = 1
-label-unfocused-background = ${colors.black}
+;label-unfocused-background = ${colors.black}
 label-unfocused-underline = ${colors.black}
 
 label-urgent = %index%!
-label-urgent-background = ${colors.red}
+;label-urgent-background = ${colors.red}
 label-urgent-padding = 2
 
 label-visible = %index%
@@ -248,31 +248,31 @@ format-padding = 1
 [module/volume]
 type = internal/volume
 
-format-volume = <bar-volume>
+format-volume = VOL <bar-volume>
 
 label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
 label-muted = SOUND MUTED
-label-muted-foreground = ${colors.gray}
+label-muted-foreground = ${root.foreground}
 
 bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.green}
-bar-volume-foreground-1 = ${colors.green}
-bar-volume-foreground-2 = ${colors.green}
-bar-volume-foreground-3 = ${colors.green}
-bar-volume-foreground-4 = ${colors.yellow}
-bar-volume-foreground-5 = ${colors.yellow}
-bar-volume-foreground-6 = ${colors.red}
+;bar-volume-foreground-0 = ${colors.green}
+;bar-volume-foreground-1 = ${colors.green}
+;bar-volume-foreground-2 = ${colors.green}
+;bar-volume-foreground-3 = ${colors.green}
+;bar-volume-foreground-4 = ${colors.yellow}
+;bar-volume-foreground-5 = ${colors.yellow}
+;bar-volume-foreground-6 = ${colors.red}
 bar-volume-gradient = false
 bar-volume-indicator = │
-bar-volume-indicator-font = 1
-bar-volume-indicator-foreground = ${colors.white}
-bar-volume-fill = |
-bar-volume-fill-font = 1
-bar-volume-empty = |
-bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${colors.gray}
+bar-volume-indicator-font = 2
+bar-volume-indicator-foreground = ${root.foreground}
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = #55
 
 
 [module/battery]
